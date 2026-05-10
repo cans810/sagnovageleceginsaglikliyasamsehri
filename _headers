@@ -1,0 +1,20 @@
+/*
+  X-Content-Type-Options: nosniff
+
+/index.html
+  Cache-Control: no-cache
+
+/Build/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/Build/*.wasm
+  Content-Type: application/wasm
+
+/Build/*.wasm.unityweb
+  Content-Type: application/wasm
+
+/Build/*.framework.js.unityweb
+  Content-Type: application/javascript
+
+/Build/*.loader.js
+  Content-Type: application/javascript
